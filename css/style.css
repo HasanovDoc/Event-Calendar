@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "gogono";
+    src: url("../fonts/gogono-cocoa-mochi-cyrillic.otf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "gogono";
+}
+
+.container {
+    width: 100%;
+    z-index: 1;
+}
+
+.eventCal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 90px;
+    height: 900px;
+}
+
+.day__card {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 17%;
+    height: 260px;
+    cursor: pointer;
+    margin: 1px;
+    box-shadow: 5px 5px;
+}
+
+.day__card:hover {
+    transform: rotate3d(1, 1, 1, -4deg);
+}
+
+.day__Num {
+    margin-top: 25%;
+    font-size: 150px;
+}
+
+.day__inf {
+    display: none;
+    position: fixed;
+    left: 0;
+    cursor: default;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.713);
+}
+
+.active>.day__inf {
+    display: block;
+}
+
+.inf-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    width: 30%;
+    height: 15%;
+    background-color: aliceblue;
+}
+
+.block-close {
+    position: relative;
+    left: 94%;
+    top: -1px;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
+
+.block-txt {
+    margin-top: 5px;
+    text-align: center;
+}
