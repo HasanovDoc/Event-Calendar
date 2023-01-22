@@ -38,7 +38,13 @@
 }
 
 .day__card:hover {
-    transform: rotate3d(1, 1, 1, -4deg);
+    box-shadow: 0 0;
+    transition: 1s;
+}
+
+.day__card:hover>.day__Num {
+    transform: rotate3d(1, -1, -1, 360deg);
+    transition: 1.5s;
 }
 
 .day__Num {
@@ -54,7 +60,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: 1000;
+    z-index: 10;
     background-color: rgba(0, 0, 0, 0.713);
 }
 
