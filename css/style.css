@@ -10,6 +10,13 @@
     font-family: "gogono";
 }
 
+body {
+    background: url("../img/background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
 .container {
     width: 100%;
     z-index: 1;
@@ -28,7 +35,7 @@
 
 .day__card {
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid rgb(191, 24, 71);
     border-radius: 20px;
     width: 17%;
     height: 260px;
@@ -42,6 +49,19 @@
     transition: 1s;
 }
 
+.day__card h2 {
+    opacity: 0;
+}
+
+.day__card h2 {
+    color: rgb(98, 51, 219);
+}
+
+.day__card:hover>h2 {
+    transition: 1s;
+    opacity: 100;
+}
+
 .day__card:hover>.day__Num {
     transform: rotate3d(1, -1, -1, 360deg);
     transition: 1.5s;
@@ -50,6 +70,7 @@
 .day__Num {
     margin-top: 25%;
     font-size: 150px;
+    color: rgb(233, 20, 80);
 }
 
 .day__inf {
@@ -77,7 +98,8 @@
     border-radius: 20px;
     width: 30%;
     height: 15%;
-    background-color: aliceblue;
+    background: rgb(103, 7, 121);
+    background: linear-gradient(90deg, rgba(103, 7, 121, 1) 0%, rgba(121, 9, 77, 1) 50%, rgba(0, 212, 255, 1) 100%);
 }
 
 .block-close {
@@ -92,4 +114,8 @@
 .block-txt {
     margin-top: 5px;
     text-align: center;
+}
+
+.block-txt p {
+    color: rgb(2, 0, 36);
 }
