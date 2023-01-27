@@ -58,7 +58,7 @@ body {
 }
 
 .day__card:hover>h2 {
-    transition: 1s;
+    transition: 15s;
     opacity: 100;
 }
 
